@@ -8,3 +8,13 @@ and for the list [1, 10, 3, 10, 10] the function should return 4.
 
 
 // Solution
+
+function sumNoDuplicates(arr) {
+  let sum = 0;
+  arr.forEach(num => {
+      if (arr.indexOf(num) === arr.lastIndexOf(num)) {
+          sum += num;
+      }
+  });
+  return sum;
+}
