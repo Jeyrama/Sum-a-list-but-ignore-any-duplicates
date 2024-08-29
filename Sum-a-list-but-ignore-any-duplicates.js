@@ -18,3 +18,5 @@ function sumNoDuplicates(arr) {
   });
   return sum;
 }
+
+// or
