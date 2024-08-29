@@ -20,3 +20,7 @@ function sumNoDuplicates(arr) {
 }
 
 // or
+
+function sumNoDuplicates(numList) {
+  return numList.filter((x) => numList.indexOf(x) === numList.lastIndexOf(x)).reduce((accum, val) => accum + val, 0)
+}
